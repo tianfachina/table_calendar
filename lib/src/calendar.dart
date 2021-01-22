@@ -371,8 +371,25 @@ class _TableCalendarState extends State<TableCalendar>
     return ClipRect(
       child: Column(
         mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           if (widget.headerVisible) _buildHeader(),
+          Padding(
+            padding: widget.calendarStyle.contentPadding,
+            child: Table(
+              // Makes this Table fill its parent horizontally
+              defaultColumnWidth: FractionColumnWidth(1.0 / 7),
+              children: <TableRow>[
+                _buildDaysOfWeek(),
+              ],
+            ),
+          ),
+          Container(
+            height: 1,
+            margin: EdgeInsets.only(top: 10,left: 30,right: 30),
+            color: Color(0xffF5F5F5),
+          ),
+          ///下方表格
           Padding(
             padding: widget.calendarStyle.contentPadding,
             child: _buildCalendarContent(),
@@ -452,6 +469,7 @@ class _TableCalendarState extends State<TableCalendar>
 
   Widget _buildCalendarContent() {
     if (widget.formatAnimation == FormatAnimation.slide) {
+      debugPrint('FormatAnimation.slide');
       return AnimatedSize(
         duration: Duration(
             milliseconds:
@@ -464,6 +482,7 @@ class _TableCalendarState extends State<TableCalendar>
         child: _buildWrapper(),
       );
     } else {
+      debugPrint('FormatAnimation.scale');
       return AnimatedSwitcher(
         duration: const Duration(milliseconds: 350),
         transitionBuilder: (child, animation) {
@@ -550,12 +569,16 @@ class _TableCalendarState extends State<TableCalendar>
     );
   }
 
+
+  ///构建 周日--周一  日期表格
   Widget _buildTable() {
     final daysInWeek = 7;
+    /// 构建周日--周一
     final children = <TableRow>[
-      if (widget.calendarStyle.renderDaysOfWeek) _buildDaysOfWeek(),
+//      if (widget.calendarStyle.renderDaysOfWeek) _buildDaysOfWeek(),
     ];
 
+    ///构建日期表格
     int x = 0;
     while (x < widget.calendarController._visibleDays.value.length) {
       children.add(_buildTableRow(widget.calendarController._visibleDays.value
@@ -591,7 +614,7 @@ class _TableCalendarState extends State<TableCalendar>
         }
         return Center(
           child: Text(
-            weekdayString,
+            weekdayString[1],
             style: isWeekend
                 ? widget.daysOfWeekStyle.weekendStyle
                 : widget.daysOfWeekStyle.weekdayStyle,
@@ -609,6 +632,7 @@ class _TableCalendarState extends State<TableCalendar>
   }
 
   // TableCell will have equal width and height
+  /// 每天的weidget
   Widget _buildTableCell(DateTime date) {
     return LayoutBuilder(
       builder: (context, constraints) => ConstrainedBox(
@@ -683,8 +707,7 @@ class _TableCalendarState extends State<TableCalendar>
       }
     }
 
-    return GestureDetector(
-      behavior: widget.dayHitTestBehavior,
+    return InkWell(
       onTap: () => _isDayUnavailable(date)
           ? _onUnavailableDaySelected()
           : _selectDay(date),
@@ -693,6 +716,17 @@ class _TableCalendarState extends State<TableCalendar>
           : _onDayLongPressed(date),
       child: content,
     );
+
+    /*return GestureDetector(
+      behavior: widget.dayHitTestBehavior,
+      onTap: () => _isDayUnavailable(date)
+          ? _onUnavailableDaySelected()
+          : _selectDay(date),
+      onLongPress: () => _isDayUnavailable(date)
+          ? _onUnavailableDayLongPressed()
+          : _onDayLongPressed(date),
+      child: content,
+    );*/
   }
 
   Widget _buildCellContent(DateTime date) {
