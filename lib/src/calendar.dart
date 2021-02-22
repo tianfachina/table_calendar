@@ -386,7 +386,7 @@ class _TableCalendarState extends State<TableCalendar>
           ),
           Container(
             height: 1,
-            margin: EdgeInsets.only(top: 10,left: 30,right: 30),
+            margin: EdgeInsets.only(top: 10,left: 20,right: 20),
             color: Color(0xffF5F5F5),
           ),
           ///下方表格

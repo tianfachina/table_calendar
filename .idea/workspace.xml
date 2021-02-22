@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca419f4a-7504-4458-b5ff-ea2828c3405a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/calendar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/calendar.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table_calendar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/table_calendar.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,11 +54,28 @@
       <workItem from="1611226448678" duration="159000" />
       <workItem from="1611226617396" duration="545000" />
       <workItem from="1611227172413" duration="3060000" />
+      <workItem from="1611277621689" duration="914000" />
+      <workItem from="1611279781159" duration="79000" />
+      <workItem from="1611902533897" duration="68000" />
+      <workItem from="1611902607022" duration="85000" />
+      <workItem from="1611909039939" duration="800000" />
     </task>
+    <task id="LOCAL-00001" summary="修改样式">
+      <created>1611277855196</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611277855196</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改样式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="692" y="316" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611226601593">
@@ -74,22 +86,30 @@
       <screen x="0" y="23" width="2560" height="1340" />
     </state>
     <state x="965" y="451" key="#com.intellij.ide.util.TreeFileChooserDialog/-1280.23.1280.777/0.23.2560.1340@0.23.2560.1340" timestamp="1611226598819" />
-    <state width="1992" height="491" key="GridCell.Tab.0.bottom" timestamp="1611230365651">
+    <state x="702" y="219" width="1416" height="1061" key="CommitChangelistDialog2" timestamp="1611277854674">
       <screen x="0" y="23" width="2560" height="1340" />
     </state>
-    <state width="1992" height="491" key="GridCell.Tab.0.bottom/-1280.23.1280.777/0.23.2560.1340@0.23.2560.1340" timestamp="1611230365651" />
-    <state width="1992" height="491" key="GridCell.Tab.0.center" timestamp="1611230365650">
+    <state x="702" y="219" width="1416" height="1061" key="CommitChangelistDialog2/-1280.23.1280.777/0.23.2560.1340@0.23.2560.1340" timestamp="1611277854674" />
+    <state width="2035" height="464" key="GridCell.Tab.0.bottom" timestamp="1611909891096">
       <screen x="0" y="23" width="2560" height="1340" />
     </state>
-    <state width="1992" height="491" key="GridCell.Tab.0.center/-1280.23.1280.777/0.23.2560.1340@0.23.2560.1340" timestamp="1611230365650" />
-    <state width="1992" height="491" key="GridCell.Tab.0.left" timestamp="1611230365649">
+    <state width="2035" height="464" key="GridCell.Tab.0.bottom/-1280.23.1280.777/0.23.2560.1340@0.23.2560.1340" timestamp="1611909891096" />
+    <state width="2035" height="464" key="GridCell.Tab.0.center" timestamp="1611909891095">
       <screen x="0" y="23" width="2560" height="1340" />
     </state>
-    <state width="1992" height="491" key="GridCell.Tab.0.left/-1280.23.1280.777/0.23.2560.1340@0.23.2560.1340" timestamp="1611230365649" />
-    <state width="1992" height="491" key="GridCell.Tab.0.right" timestamp="1611230365650">
+    <state width="2035" height="464" key="GridCell.Tab.0.center/-1280.23.1280.777/0.23.2560.1340@0.23.2560.1340" timestamp="1611909891095" />
+    <state width="2035" height="464" key="GridCell.Tab.0.left" timestamp="1611909891094">
       <screen x="0" y="23" width="2560" height="1340" />
     </state>
-    <state width="1992" height="491" key="GridCell.Tab.0.right/-1280.23.1280.777/0.23.2560.1340@0.23.2560.1340" timestamp="1611230365650" />
+    <state width="2035" height="464" key="GridCell.Tab.0.left/-1280.23.1280.777/0.23.2560.1340@0.23.2560.1340" timestamp="1611909891094" />
+    <state width="2035" height="464" key="GridCell.Tab.0.right" timestamp="1611909891095">
+      <screen x="0" y="23" width="2560" height="1340" />
+    </state>
+    <state width="2035" height="464" key="GridCell.Tab.0.right/-1280.23.1280.777/0.23.2560.1340@0.23.2560.1340" timestamp="1611909891095" />
+    <state x="952" y="446" key="Vcs.Push.Dialog.v2" timestamp="1611277862715">
+      <screen x="0" y="23" width="2560" height="1340" />
+    </state>
+    <state x="952" y="446" key="Vcs.Push.Dialog.v2/-1280.23.1280.777/0.23.2560.1340@0.23.2560.1340" timestamp="1611277862715" />
     <state x="968" y="340" width="670" height="676" key="search.everywhere.popup" timestamp="1611227589542">
       <screen x="0" y="23" width="2560" height="1340" />
     </state>
